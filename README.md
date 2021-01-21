@@ -1,13 +1,10 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* Rails version: 6.1.1
 
-Things you may want to cover:
+* Ruby version:  ruby 2.7.2p137 (2020-10-01 revision 5445e04352) [x86_64-linux]
 
-* Ruby version
-
-* System dependencies
+* Operating System:  20.04.1-Ubuntu SMP Tue Jan 12 16:39:47 UTC 2021 x86_64 GNU/Linux
 
 * Configuration
 
