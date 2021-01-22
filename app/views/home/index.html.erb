@@ -1,9 +1,8 @@
-<h1>Rooms.net</h1>
+<h1>Rooms updates</h1>
 
-<p>
-    <ul>
-        <li><%= link_to "New User", new_user_path%></li>
+<ul>
+    <%= @rooms.each do |room|%></li>
+        <li> <%= link_to room.complete_name, room %></li>
+    <% end %>
+</ul>
 
-        <li> <%= link_to "Show Rooms", rooms_path %></li>
-    </ul>
-</p>

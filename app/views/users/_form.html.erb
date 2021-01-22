@@ -1,8 +1,7 @@
 <%= form_with(model: user) do |form| %>
   <% if user.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(user.errors.count, "error") %> prohibited this user from being saved:</h2>
-
+      <%= pluralize(user.errors.count, "error") %> prohibited this user from being saved:
       <ul>
         <% user.errors.each do |error| %>
           <li><%= error.full_message %></li>
@@ -11,35 +10,41 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <p>
     <%= form.label :email %>
     <%= form.text_field :email %>
-  </div>
+    <%= error_tag @user, :email %>
+  </p>
 
-  <div class="field">
+  <p>
     <%= form.label :password %>
     <%= form.password_field :password %>
-  </div>
+    <%= error_tag @user, :password %>
+  </p>
 
-   <div class="field">
+   <p>
     <%= form.label :password_confirmation %>
     <%= form.password_field :password_confirmation %>
-  </div>
+    <%= error_tag @user, :password_confirmation %>
+  </p>
 
-  <div class="field">
+  <p>
     <%= form.label :full_name %>
     <%= form.text_field :full_name %>
-  </div>
+    <%= error_tag @user, :full_name %>
+  </p>
 
-  <div class="field">
+  <p>
     <%= form.label :location %>
     <%= form.text_field :location %>
-  </div>
+    <%= error_tag @user, :location %>
+  </p>
 
-  <div class="field">
+  <p>
     <%= form.label :bio %>
     <%= form.text_area :bio %>
-  </div>
+    <%= error_tag @user, :bio %>
+  </p>
 
   <div class="actions">
     <%= form.submit %>

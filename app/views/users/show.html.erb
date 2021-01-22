@@ -1,37 +1,20 @@
-<p id="notice"><%= notice %></p>
+<!-- <p id="notice"><%= notice %></p> -->
 
-<p>
-  <strong>Email:</strong>
-  <%= @user.email %>
-</p>
-
-<!--
-<p>
-  <strong>Password:</strong>
-  <%= @user.password %>
-</p>
--->
-
-<p>
-  <h2><strong>Full name:</strong>
-  <%= @user.full_name %></h2>
-</p>
+<h1>Full name: <%= @user.full_name %> </h2> 
 
 <ul>
   <li>
-    <p>
-      <strong>Location:</strong>
-      <%= @user.location %>
-    </p>
+    <strong>Email: <%= @user.email %> </strong>            
   </li>
-
-  <li>
-    <p>
-      <strong>Bio:</strong>
-      <%= @user.bio %>
-    </p>
+  <li>      
+    <strong>Location:</strong>
+    <%= @user.location %>      
   </li>
-<ul>
+  <li>      
+    <strong>Bio:</strong>
+    <%= @user.bio %>
+  </li>
+</ul>
 
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %> 

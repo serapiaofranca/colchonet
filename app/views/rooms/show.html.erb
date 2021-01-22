@@ -1,19 +1,18 @@
-<p id="notice"><%= notice %></p>
-
-<p>
+<!-- <p id="notice"><%= notice %></p> -->
+<h1>
   <strong>Title:</strong>
   <%= @room.title %>
-</p>
+</h1>
+<ul>
+  <li>
+    <strong>Location:</strong>
+    <%= @room.location %>
+  </li>
 
-<p>
-  <strong>Location:</strong>
-  <%= @room.location %>
-</p>
-
-<p>
-  <strong>Description:</strong>
-  <%= @room.description %>
-</p>
-
+  <li>
+    <strong>Description:</strong>
+    <%= @room.description %>
+  </li>
+</ul>
 <%= link_to 'Edit', edit_room_path(@room) %> |
 <%= link_to 'Back', rooms_path %> 
